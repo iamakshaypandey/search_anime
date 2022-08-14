@@ -13,7 +13,6 @@ function App() {
         try{
             const response = await fetch(`https://api.jikan.moe/v4/anime`) 
             const data = await response.json()
-            // console.log('data chekc',newPost)
             setData(data)
         }catch(err){
             console.log(err.message);

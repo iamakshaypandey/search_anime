@@ -38,7 +38,6 @@ function Card() {
 
     const AddHandler = (post) => {
         allList.push(post)
-        console.log(allList);
         localStorage.setItem('watchList', JSON.stringify(allList))
     }
 
