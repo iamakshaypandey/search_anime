@@ -29,12 +29,12 @@ function Card() {
         }
     }
 
-
     useEffect(() => {
         getMorePost()
         const elm = document.querySelector('#scrolling')
         elm.addEventListener('scroll', handleScroll)
-    }, [])
+        // eslint-disable-next-line
+    },[])
 
     const AddHandler = (post) => {
         allList.push(post)

@@ -5,7 +5,7 @@ import watchlist from '../img/watchlist.webp'
 
 function Navbar() {
     const AnimeSearch = (e)=>{
-        const {value} = e.target
+        // const {value} = e.target
     }
     return (
         <>

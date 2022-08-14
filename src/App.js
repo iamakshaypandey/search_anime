@@ -3,7 +3,7 @@ import '../src/Component/Mystyle.css'
 import Navbar from './Component/Navbar';
 import Card from './Component/Card';
 import { useState,useEffect } from 'react';
-import { Routes, Route, Link } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import WatchList from './Component/WatchList';
 
 
@@ -13,7 +13,6 @@ function App() {
         try{
             const response = await fetch(`https://api.jikan.moe/v4/anime`) 
             const data = await response.json()
-            const newPost = data.data
             // console.log('data chekc',newPost)
             setData(data)
         }catch(err){
