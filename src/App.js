@@ -6,7 +6,6 @@ import { useState,useEffect } from 'react';
 import { Routes, Route } from "react-router-dom";
 import WatchList from './Component/WatchList';
 
-
 function App() {
   const [data,setData] = useState([])
     const Data = async ()=>{

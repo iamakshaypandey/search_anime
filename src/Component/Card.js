@@ -42,15 +42,16 @@ function Card() {
     }
 
 
+
     return (
         <>
             <div className='container' id='scrolling' style={{ height: '100vh', overflowY: 'scroll' }}>
                 <div className='container-card'>
                     {
-                        DataOne && DataOne.map((post) => {
+                        DataOne && DataOne.map((post,i) => {
                             return (
                                 <>
-                                    <div class="container">
+                                    <div key={i} class="container">
                                         <div class="card">
                                             <div class="card__header">
                                                 <img src={post.images.jpg.image_url} alt="card__image" class="card__image" width="600" />
@@ -63,7 +64,7 @@ function Card() {
                                             <div class="card__footer">
                                                 <div class="user">
                                                     <button className='btn-add' onClick={() => AddHandler(post)}>Add</button>
-                                                    <button className='btn-Check' onClick={() => AddHandler(post)}>Check Details</button>
+
                                                 </div>
                                             </div>
                                         </div>
